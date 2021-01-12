@@ -1,0 +1,32 @@
+{
+  "name": "Vacina",
+  "fields": [
+    {
+      "fieldName": "nome",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fabricante",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "pessoa",
+      "otherEntityRelationshipName": "vacina",
+      "relationshipName": "vacinados"
+    }
+  ],
+  "changelogDate": "20210112133307",
+  "entityTableName": "vacina",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
