@@ -1,0 +1,17 @@
+
+entity Pessoa {
+	nome String    
+    nascimento LocalDate    
+    cadastro ZonedDateTime   
+    dose1 LocalDate
+    dose2 LocalDate
+}
+
+entity Vacina {
+	nome String
+    fabricante String
+}
+
+relationship OneToMany {
+	Vacina{vacinados} to Pessoa{vacina(nome)}
+}
