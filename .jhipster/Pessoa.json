@@ -1,0 +1,45 @@
+{
+  "name": "Pessoa",
+  "fields": [
+    {
+      "fieldName": "nome",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nascimento",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "cadastro",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "dose1",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "dose2",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "vacina",
+      "otherEntityRelationshipName": "vacinados",
+      "relationshipName": "vacina",
+      "otherEntityField": "nome"
+    }
+  ],
+  "changelogDate": "20210112133207",
+  "entityTableName": "pessoa",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}
